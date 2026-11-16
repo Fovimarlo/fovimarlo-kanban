@@ -58,6 +58,7 @@ import { api } from "~/utils/api";
 import { formatToArray, isPlaceholderPublicId } from "~/utils/helpers";
 import { DeleteCardConfirmation } from "~/views/card/components/DeleteCardConfirmation";
 import { ArchivedCards } from "./components/ArchivedCards";
+import { BoardBackgroundForm } from "./components/BoardBackgroundForm";
 import BoardDropdown from "./components/BoardDropdown";
 import BoardSwitcher from "./components/BoardSwitcher";
 import CalendarView from "./components/CalendarView";
@@ -797,6 +798,16 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
 
         <Modal
           modalSize="sm"
+          isVisible={isOpen && modalContentType === "BOARD_BACKGROUND"}
+        >
+          <BoardBackgroundForm
+            boardPublicId={boardId ?? ""}
+            backgroundImageUrl={boardData?.backgroundImageUrl ?? null}
+          />
+        </Modal>
+
+        <Modal
+          modalSize="sm"
           isVisible={isOpen && modalContentType === "MOVE_BOARD"}
         >
           <MoveBoardForm boardPublicId={boardId ?? ""} />
@@ -872,7 +883,20 @@ export default function BoardPage({ isTemplate }: { isTemplate?: boolean }) {
         title={`${boardData?.name ?? (isTemplate ? t`Template` : t`Board`)} | ${workspace.name ?? t`Workspace`}`}
       />
       <div className="relative flex h-full flex-col">
-        <PatternedBackground />
+        {boardData?.backgroundImageUrl ? (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: `url("${boardData.backgroundImageUrl}")`,
+            }}
+          >
+            {/* Soften the image so lists and cards stay readable */}
+            <div className="absolute inset-0 bg-light-50/60 dark:bg-dark-50/70" />
+          </div>
+        ) : (
+          <PatternedBackground />
+        )}
         <div className="z-10 flex w-full flex-col justify-between p-6 md:flex-row md:p-8">
           {isLoading && !boardData && (
             <div className="flex space-x-2">

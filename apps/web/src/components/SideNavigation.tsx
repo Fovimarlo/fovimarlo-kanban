@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useMemo, useState } from "react";
 import {
   HiBolt,
+  HiOutlineCalendarDays,
   HiOutlineClipboardDocumentCheck,
   HiOutlineDocumentText,
 } from "react-icons/hi2";
@@ -126,6 +127,18 @@ export default function SideNavigation({
           action: () => router.push("/assigned"),
           group: "NAVIGATION",
           description: t`Go to cards assigned to me`,
+        },
+      },
+      {
+        name: t`Daily log`,
+        href: "/worklog",
+        staticIcon: <HiOutlineCalendarDays className="h-[18px] w-[18px]" />,
+        keyboardShortcut: {
+          type: "SEQUENCE",
+          strokes: [{ key: "G" }, { key: "L" }],
+          action: () => router.push("/worklog"),
+          group: "NAVIGATION",
+          description: t`Go to daily log`,
         },
       },
       {

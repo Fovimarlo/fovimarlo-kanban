@@ -281,6 +281,13 @@
       "when": 1793448950156,
       "tag": "20261031121550_AddClickupImportSource",
       "breakpoints": true
+    },
+    {
+      "idx": 40,
+      "version": "7",
+      "when": 1794819355161,
+      "tag": "20261116085555_AddWorkLogsAndBoardBackground",
+      "breakpoints": true
     }
   ]
 }

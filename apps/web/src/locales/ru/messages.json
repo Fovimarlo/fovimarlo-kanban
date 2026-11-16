@@ -24,7 +24,6 @@
     "translation": ", или смотрите нашу"
   },
   "XOue+X": {
-    "translation": "",
     "message": "{0} (deleted list)",
     "placeholders": {
       "0": [
@@ -37,7 +36,8 @@
         "src/views/board/components/ArchivedCards.tsx",
         109
       ]
-    ]
+    ],
+    "translation": ""
   },
   "JArWcF": {
     "message": "{0} | {1}",
@@ -64,6 +64,22 @@
     ],
     "translation": "{0} | {1}"
   },
+  "UtDeek": {
+    "translation": "",
+    "message": "{0} cards",
+    "placeholders": {
+      "0": [
+        "cards.length"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/assigned/index.tsx",
+        46
+      ]
+    ]
+  },
   "baIPh3": {
     "message": "{0} cards due",
     "placeholders": {
@@ -80,6 +96,22 @@
     ],
     "translation": "{0} карт с дедлайном"
   },
+  "TbaLi1": {
+    "translation": "",
+    "message": "{0} entries",
+    "placeholders": {
+      "0": [
+        "group.entries.length"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        440
+      ]
+    ]
+  },
   "mU+M00": {
     "message": "{0} has been added to your favorites.",
     "placeholders": {
@@ -91,7 +123,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        64
+        65
       ]
     ],
     "translation": "{0} добавлен в избранное."
@@ -107,7 +139,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        65
+        66
       ]
     ],
     "translation": "{0} удалён из избранного."
@@ -139,7 +171,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        906
+        930
       ]
     ],
     "translation": "{0} не найдено"
@@ -191,6 +223,41 @@
       ]
     ],
     "translation": ""
+  },
+  "nXbO/0": {
+    "translation": "",
+    "message": "{succeeded} file(s) uploaded, {failed} failed. Please try again.",
+    "placeholders": {
+      "succeeded": [
+        "succeeded"
+      ],
+      "failed": [
+        "failed"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/hooks/useCardAttachmentUpload.ts",
+        86
+      ]
+    ]
+  },
+  "FYPTJW": {
+    "translation": "",
+    "message": "{succeeded} files have been uploaded successfully.",
+    "placeholders": {
+      "succeeded": [
+        "succeeded"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/hooks/useCardAttachmentUpload.ts",
+        95
+      ]
+    ]
   },
   "h/eDNV": {
     "message": "+ {overflowCount} more",
@@ -520,6 +587,18 @@
     ],
     "translation": "Добавить элемент..."
   },
+  "V8euYO": {
+    "translation": "",
+    "message": "Add attachment",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/AttachmentUpload.tsx",
+        62
+      ]
+    ]
+  },
   "sFY+gw": {
     "message": "Add card",
     "placeholders": {},
@@ -541,10 +620,6 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      [
-        "src/views/card/components/AttachmentUpload.tsx",
-        125
-      ],
       [
         "src/views/card/components/Dropdown.tsx",
         123
@@ -616,6 +691,18 @@
     ],
     "translation": "Добавить детали..."
   },
+  "Rd7v4h": {
+    "translation": "",
+    "message": "Add entry",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        398
+      ]
+    ]
+  },
   "lyqwgn": {
     "message": "Add label",
     "placeholders": {},
@@ -672,6 +759,18 @@
     ],
     "translation": ""
   },
+  "OkeQcU": {
+    "translation": "",
+    "message": "Add the brand's logo or a background image. It is shown behind the board and on the boards overview.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        130
+      ]
+    ]
+  },
   "pBsoKL": {
     "message": "Add to favorites",
     "placeholders": {},
@@ -679,10 +778,26 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        144
+        150
       ]
     ],
     "translation": "Добавить в избранное"
+  },
+  "QTHrgW": {
+    "translation": "",
+    "message": "Add to my log for {0}",
+    "placeholders": {
+      "0": [
+        "format(date, \"d MMMM\", { locale: dateLocale })"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        393
+      ]
+    ]
   },
   "cWXW+7": {
     "message": "Add webhook",
@@ -846,7 +961,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        61
+        62
       ]
     ],
     "translation": "Добавлено в избранное"
@@ -1225,7 +1340,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        124
+        130
       ]
     ],
     "translation": "Архивировать доску"
@@ -1243,7 +1358,6 @@
     "translation": "В архиве"
   },
   "gGNF+1": {
-    "translation": "",
     "message": "Archived {archivedAgo}",
     "placeholders": {
       "archivedAgo": [
@@ -1256,10 +1370,10 @@
         "src/views/board/components/ArchivedCards.tsx",
         114
       ]
-    ]
+    ],
+    "translation": ""
   },
   "/ignla": {
-    "translation": "",
     "message": "Archived {archivedAgo} by {0}",
     "placeholders": {
       "0": [
@@ -1275,10 +1389,10 @@
         "src/views/board/components/ArchivedCards.tsx",
         113
       ]
-    ]
+    ],
+    "translation": ""
   },
   "gWlA7i": {
-    "translation": "",
     "message": "Archived cards",
     "placeholders": {},
     "comments": [],
@@ -1289,12 +1403,12 @@
       ],
       [
         "src/views/board/components/BoardDropdown.tsx",
-        117
+        123
       ]
-    ]
+    ],
+    "translation": ""
   },
   "vx/87p": {
-    "translation": "",
     "message": "archived the card",
     "placeholders": {},
     "comments": [],
@@ -1303,7 +1417,8 @@
         "src/views/card/components/ActivityList.tsx",
         156
       ]
-    ]
+    ],
+    "translation": ""
   },
   "lo8xBK": {
     "message": "Are you sure want to remove {entityLabel}?",
@@ -1461,6 +1576,38 @@
     ],
     "translation": "назначено <0>{0}</0> на карточку"
   },
+  "iU3XRS": {
+    "translation": "",
+    "message": "Assigned to me",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/SideNavigation.tsx",
+        119
+      ],
+      [
+        "src/views/assigned/index.tsx",
+        42
+      ]
+    ]
+  },
+  "6F7z9C": {
+    "translation": "",
+    "message": "Assigned to me | {0}",
+    "placeholders": {
+      "0": [
+        "workspace.name"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/assigned/index.tsx",
+        38
+      ]
+    ]
+  },
   "JUce1S": {
     "message": "Assignees",
     "placeholders": {},
@@ -1495,8 +1642,8 @@
     "comments": [],
     "origin": [
       [
-        "src/views/card/components/AttachmentUpload.tsx",
-        45
+        "src/hooks/useCardAttachmentUpload.ts",
+        92
       ]
     ],
     "translation": "Вложение загружено"
@@ -1700,7 +1847,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        872
+        883
       ],
       [
         "src/views/card/index.tsx",
@@ -1720,7 +1867,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        50
+        51
       ]
     ],
     "translation": "Доска архивирована"
@@ -1744,7 +1891,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        895
+        919
       ]
     ],
     "translation": "Название доски"
@@ -1792,7 +1939,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        173
+        179
       ]
     ],
     "translation": "Параметры доски"
@@ -1816,7 +1963,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        51
+        52
       ]
     ],
     "translation": "Доска восстановлена из архива"
@@ -1904,7 +2051,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        102
+        107
       ],
       [
         "src/utils/permission-category-label.ts",
@@ -1948,6 +2095,58 @@
       ]
     ],
     "translation": "Мозговой штурм"
+  },
+  "3r1LXi": {
+    "translation": "",
+    "message": "Brand / board",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        94
+      ]
+    ]
+  },
+  "chaMzm": {
+    "translation": "",
+    "message": "Brand image",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        117
+      ],
+      [
+        "src/views/board/components/BoardDropdown.tsx",
+        116
+      ]
+    ]
+  },
+  "UGqsjv": {
+    "translation": "",
+    "message": "Brand image removed",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        40
+      ]
+    ]
+  },
+  "2KDyQ6": {
+    "translation": "",
+    "message": "Brand image updated",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        89
+      ]
+    ]
   },
   "vXemf6": {
     "message": "Bug",
@@ -2521,6 +2720,14 @@
       [
         "src/views/settings/components/DeleteWorkspaceConfirmation.tsx",
         98
+      ],
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        120
+      ],
+      [
+        "src/views/worklog/index.tsx",
+        245
       ]
     ],
     "translation": "Отмена"
@@ -2606,7 +2813,6 @@
     "translation": "Параметры карточки"
   },
   "0zzh5k": {
-    "translation": "",
     "message": "Card restored",
     "placeholders": {},
     "comments": [],
@@ -2615,7 +2821,8 @@
         "src/views/board/components/ArchivedCards.tsx",
         37
       ]
-    ]
+    ],
+    "translation": ""
   },
   "ZH7TVS": {
     "message": "Card title",
@@ -2636,7 +2843,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        439
+        440
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -2905,6 +3112,30 @@
     ],
     "translation": "Перейдите по ссылке, которую мы отправили на {magicLinkRecipient}, чтобы войти."
   },
+  "pgsVLC": {
+    "translation": "",
+    "message": "Click or drop an image here",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        178
+      ]
+    ]
+  },
+  "An1Y6L": {
+    "translation": "",
+    "message": "Click or drop to replace",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        177
+      ]
+    ]
+  },
   "yz7wBu": {
     "message": "Close",
     "placeholders": {},
@@ -2917,6 +3148,10 @@
       [
         "src/views/board/components/ArchivedCards.tsx",
         71
+      ],
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        123
       ],
       [
         "src/views/card/index.tsx",
@@ -3612,11 +3847,11 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        140
+        141
       ],
       [
         "src/views/board/index.tsx",
-        1031
+        1055
       ]
     ],
     "translation": "Создать новый список"
@@ -3865,6 +4100,38 @@
     ],
     "translation": "Служба поддержки клиентов"
   },
+  "qLCIjd": {
+    "translation": "",
+    "message": "Daily log",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/SideNavigation.tsx",
+        133
+      ],
+      [
+        "src/views/worklog/index.tsx",
+        308
+      ]
+    ]
+  },
+  "WmSHOR": {
+    "translation": "",
+    "message": "Daily log | {0}",
+    "placeholders": {
+      "0": [
+        "workspace.name"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        304
+      ]
+    ]
+  },
   "pvnfJD": {
     "message": "Dark",
     "placeholders": {},
@@ -3876,6 +4143,18 @@
       ]
     ],
     "translation": "Тёмная тема"
+  },
+  "H7OUPr": {
+    "translation": "",
+    "message": "Day",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        324
+      ]
+    ]
   },
   "cp1rsD": {
     "message": "Deactivate invite link",
@@ -3957,6 +4236,10 @@
       [
         "src/views/settings/components/WebhookList.tsx",
         136
+      ],
+      [
+        "src/views/worklog/index.tsx",
+        238
       ]
     ],
     "translation": "Удалить"
@@ -4004,7 +4287,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        155
+        161
       ]
     ],
     "translation": "Удалить доску"
@@ -4061,6 +4344,18 @@
     ],
     "translation": "Удалить комментарий"
   },
+  "Qd9nQC": {
+    "translation": "",
+    "message": "Delete entry",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        262
+      ]
+    ]
+  },
   "lYT7pQ": {
     "message": "Delete list",
     "placeholders": {},
@@ -4116,7 +4411,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        155
+        161
       ]
     ],
     "translation": "Удалить шаблон"
@@ -4452,10 +4747,22 @@
     "origin": [
       [
         "src/views/card/components/AttachmentThumbnails.tsx",
-        142
+        155
       ]
     ],
     "translation": "Не удалось загрузить"
+  },
+  "4f6gZ1": {
+    "translation": "",
+    "message": "Drop files to attach them to this card",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/CardFileDropZone.tsx",
+        108
+      ]
+    ]
   },
   "XicmhT": {
     "message": "Due date",
@@ -4569,6 +4876,30 @@
     ],
     "translation": "Дублирование…"
   },
+  "lkz6PL": {
+    "translation": "",
+    "message": "Duration",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        109
+      ]
+    ]
+  },
+  "o5UXGa": {
+    "translation": "",
+    "message": "Duration (e.g. 1h 30m)",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        108
+      ]
+    ]
+  },
   "ePK91l": {
     "message": "Edit",
     "placeholders": {},
@@ -4592,7 +4923,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        110
+        111
       ],
       [
         "src/views/board/components/UpdateBoardSlugForm.tsx",
@@ -4612,6 +4943,18 @@
       ]
     ],
     "translation": "Редактировать комментарий"
+  },
+  "BiSSQP": {
+    "translation": "",
+    "message": "Edit entry",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        254
+      ]
+    ]
   },
   "dgr4Kq": {
     "message": "Edit label",
@@ -5145,6 +5488,18 @@
     ],
     "translation": "События"
   },
+  "PsQmAw": {
+    "translation": "",
+    "message": "Everyone",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        334
+      ]
+    ]
+  },
   "8iP0S8": {
     "message": "Everything in the free plan, plus:",
     "placeholders": {},
@@ -5335,11 +5690,23 @@
     "comments": [],
     "origin": [
       [
-        "src/views/card/components/AttachmentUpload.tsx",
-        52
+        "src/hooks/useCardAttachmentUpload.ts",
+        87
       ]
     ],
     "translation": "Не удалось загрузить вложение. Пожалуйста, попробуйте ещё раз."
+  },
+  "3nY+5l": {
+    "translation": "",
+    "message": "Failed to upload the image. Please try again.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        97
+      ]
+    ]
   },
   "/lDBHm": {
     "message": "FAQ",
@@ -5453,6 +5820,22 @@
     ],
     "translation": "Отзыв отправлен"
   },
+  "NMzjiG": {
+    "translation": "",
+    "message": "File too large",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/hooks/useCardAttachmentUpload.ts",
+        37
+      ],
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        66
+      ]
+    ]
+  },
   "F6m23G": {
     "message": "File uploads",
     "placeholders": {},
@@ -5465,6 +5848,22 @@
     ],
     "translation": "Загрузка файлов"
   },
+  "FpVAJ1": {
+    "translation": "",
+    "message": "Files must be smaller than 50MB: {0}",
+    "placeholders": {
+      "0": [
+        "tooLarge\n            .map((file) => file.name)\n            .join(\", \")"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/hooks/useCardAttachmentUpload.ts",
+        38
+      ]
+    ]
+  },
   "o7J4JM": {
     "message": "Filter",
     "placeholders": {},
@@ -5476,6 +5875,18 @@
       ]
     ],
     "translation": "Фильтр"
+  },
+  "NKRuA7": {
+    "translation": "",
+    "message": "Filter by person",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        331
+      ]
+    ]
   },
   "l31EoQ": {
     "message": "Find answers to common questions about Kan. Can't find what you're looking for? Feel free to <0>contact us</0>.",
@@ -5716,7 +6127,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        1013
+        1037
       ]
     ],
     "translation": "Начните с создания нового списка"
@@ -5844,7 +6255,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        110
+        115
       ],
       [
         "src/pages/404.tsx",
@@ -5852,6 +6263,30 @@
       ]
     ],
     "translation": "Перейти к доскам"
+  },
+  "/Ea6kg": {
+    "translation": "",
+    "message": "Go to cards assigned to me",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/SideNavigation.tsx",
+        129
+      ]
+    ]
+  },
+  "IiDacE": {
+    "translation": "",
+    "message": "Go to daily log",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/SideNavigation.tsx",
+        141
+      ]
+    ]
   },
   "XEoGkQ": {
     "message": "Go to homepage",
@@ -5872,7 +6307,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        146
+        177
       ]
     ],
     "translation": "Перейти к участникам"
@@ -5884,7 +6319,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        122
+        153
       ]
     ],
     "translation": ""
@@ -5896,7 +6331,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        158
+        189
       ]
     ],
     "translation": "Перейти к настройкам"
@@ -5908,7 +6343,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        134
+        165
       ]
     ],
     "translation": "Перейти к шаблонам"
@@ -6208,6 +6643,18 @@
       ]
     ],
     "translation": "Идеи по улучшению этой страницы..."
+  },
+  "nJWJkq": {
+    "translation": "",
+    "message": "Images and other files up to 50MB",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/CardFileDropZone.tsx",
+        111
+      ]
+    ]
   },
   "l3s5ri": {
     "message": "Import",
@@ -6534,7 +6981,6 @@
     "translation": "Приглашение участников требует тарифного плана Team. Вы будете перенаправлены для обновления вашего рабочего пространства."
   },
   "8PTfgu": {
-    "translation": "",
     "message": "It's back in {listName}.",
     "placeholders": {
       "listName": [
@@ -6547,10 +6993,10 @@
         "src/views/board/components/ArchivedCards.tsx",
         40
       ]
-    ]
+    ],
+    "translation": ""
   },
   "Vsgpq7": {
-    "translation": "",
     "message": "Its list no longer exists, so it was added to {listName}.",
     "placeholders": {
       "listName": [
@@ -6563,7 +7009,8 @@
         "src/views/board/components/ArchivedCards.tsx",
         39
       ]
-    ]
+    ],
+    "translation": ""
   },
   "c9AJhn": {
     "message": "Join workspace",
@@ -6592,6 +7039,18 @@
       ]
     ],
     "translation": "Присоединиться к рабочему пространству | kan.bn"
+  },
+  "WzcT4b": {
+    "translation": "",
+    "message": "JPG, PNG, WEBP or GIF, up to 10MB.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        182
+      ]
+    ]
   },
   "wM8xd8": {
     "message": "Junior",
@@ -6864,7 +7323,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        437
+        438
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -6946,7 +7405,6 @@
     "translation": "Списки"
   },
   "yQ2kGp": {
-    "translation": "",
     "message": "Load more",
     "placeholders": {},
     "comments": [],
@@ -6955,7 +7413,8 @@
         "src/views/board/components/ArchivedCards.tsx",
         142
       ]
-    ]
+    ],
+    "translation": ""
   },
   "1rVAfU": {
     "message": "Load more activities",
@@ -7096,7 +7555,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        99
+        100
       ]
     ],
     "translation": "Создать шаблон"
@@ -7252,7 +7711,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        138
+        169
       ],
       [
         "src/utils/permission-category-label.ts",
@@ -7412,7 +7871,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        135
+        141
       ]
     ],
     "translation": "Переместить в рабочее пространство"
@@ -7586,6 +8045,10 @@
     "comments": [],
     "origin": [
       [
+        "src/views/card/components/AttachmentUpload.tsx",
+        49
+      ],
+      [
         "src/views/card/components/NewChecklistForm.tsx",
         114
       ]
@@ -7627,7 +8090,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        958
+        982
       ]
     ],
     "translation": "Новый список"
@@ -7732,6 +8195,18 @@
     ],
     "translation": "Рассылка"
   },
+  "5tQWiI": {
+    "translation": "",
+    "message": "Next day",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        363
+      ]
+    ]
+  },
   "g8JmSC": {
     "message": "Next month",
     "placeholders": {},
@@ -7755,6 +8230,18 @@
       ]
     ],
     "translation": "Дальнейшие шаги"
+  },
+  "IT903p": {
+    "translation": "",
+    "message": "Next week",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        363
+      ]
+    ]
   },
   "/glL9Q": {
     "message": "No {0}",
@@ -7785,7 +8272,6 @@
     "translation": "Нет архивированных досок"
   },
   "piwvj1": {
-    "translation": "",
     "message": "No archived cards.",
     "placeholders": {},
     "comments": [],
@@ -7794,7 +8280,8 @@
         "src/views/board/components/ArchivedCards.tsx",
         83
       ]
-    ]
+    ],
+    "translation": ""
   },
   "Eg99Sc": {
     "message": "No authentication methods are currently available",
@@ -7819,6 +8306,30 @@
       ]
     ],
     "translation": "Доски не найдены"
+  },
+  "qb22V3": {
+    "translation": "",
+    "message": "No brand / board",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        97
+      ]
+    ]
+  },
+  "D8Ms3B": {
+    "translation": "",
+    "message": "No cards are assigned to you yet.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/assigned/index.tsx",
+        62
+      ]
+    ]
   },
   "WAQMrN": {
     "message": "No cards due",
@@ -7875,10 +8386,22 @@
     "origin": [
       [
         "src/views/card/components/AttachmentThumbnails.tsx",
-        143
+        156
       ]
     ],
     "translation": "Для этого вложения нет доступной ссылки для скачивания."
+  },
+  "3otDDh": {
+    "translation": "",
+    "message": "No entries yet",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        454
+      ]
+    ]
   },
   "TXO5TM": {
     "message": "No keyboard shortcuts registered.",
@@ -7911,7 +8434,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        1009
+        1033
       ]
     ],
     "translation": "Нет списков"
@@ -7923,7 +8446,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        1014
+        1038
       ]
     ],
     "translation": "Списки ещё не созданы"
@@ -7991,6 +8514,30 @@
       ]
     ],
     "translation": "Вебхуки не настроены. Добавьте вебхук для получения уведомлений."
+  },
+  "UjTmsb": {
+    "translation": "",
+    "message": "Nothing has been logged for this day yet.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        418
+      ]
+    ]
+  },
+  "6xkIpk": {
+    "translation": "",
+    "message": "Nothing has been logged for this week yet.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        419
+      ]
+    ]
   },
   "9h7RDh": {
     "message": "Offer",
@@ -8124,6 +8671,18 @@
     ],
     "translation": "или"
   },
+  "znm30Y": {
+    "translation": "",
+    "message": "or drop files anywhere / paste an image",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/card/components/AttachmentUpload.tsx",
+        65
+      ]
+    ]
+  },
   "Uci+Ph": {
     "message": "Ordered List",
     "placeholders": {},
@@ -8231,7 +8790,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        114
+        145
       ],
       [
         "src/utils/permission-category-label.ts",
@@ -8512,6 +9071,18 @@
     ],
     "translation": "Личный проект"
   },
+  "B8mlc2": {
+    "translation": "",
+    "message": "Pick a date",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        371
+      ]
+    ]
+  },
   "Oi+J+N": {
     "message": "Pick a plan to get started. All paid plans include a 14-day free trial.",
     "placeholders": {},
@@ -8575,6 +9146,18 @@
       ]
     ],
     "translation": "Платформа"
+  },
+  "ExHabH": {
+    "translation": "",
+    "message": "Please choose a JPG, PNG, WEBP or GIF image.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        58
+      ]
+    ]
   },
   "58AiWX": {
     "message": "Please confirm your new password",
@@ -8686,8 +9269,12 @@
         54
       ],
       [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        48
+      ],
+      [
         "src/views/board/components/BoardDropdown.tsx",
-        73
+        74
       ],
       [
         "src/views/board/components/NewCardForm.tsx",
@@ -8715,15 +9302,15 @@
       ],
       [
         "src/views/board/index.tsx",
-        291
+        292
       ],
       [
         "src/views/board/index.tsx",
-        347
+        348
       ],
       [
         "src/views/board/index.tsx",
-        384
+        385
       ],
       [
         "src/views/boards/components/ImportBoardsForm.tsx",
@@ -8735,7 +9322,7 @@
       ],
       [
         "src/views/card/components/AttachmentThumbnails.tsx",
-        74
+        83
       ],
       [
         "src/views/card/components/ChecklistItemRow.tsx",
@@ -8876,6 +9463,10 @@
       [
         "src/views/settings/PermissionsSettings.tsx",
         40
+      ],
+      [
+        "src/views/worklog/index.tsx",
+        92
       ]
     ],
     "translation": "Пожалуйста, попробуйте позже или обратитесь в службу поддержки."
@@ -8911,7 +9502,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        446
+        447
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -8948,6 +9539,18 @@
     ],
     "translation": "Позиция в списке (0 = первая, оставьте пустым для конца)"
   },
+  "lVfMQu": {
+    "translation": "",
+    "message": "Previous day",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        352
+      ]
+    ]
+  },
   "1xwZj/": {
     "message": "Previous month",
     "placeholders": {},
@@ -8959,6 +9562,18 @@
       ]
     ],
     "translation": "Предыдущий месяц"
+  },
+  "mmShHA": {
+    "translation": "",
+    "message": "Previous week",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        352
+      ]
+    ]
   },
   "aHCEmh": {
     "message": "Pricing",
@@ -9251,10 +9866,22 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        144
+        150
       ]
     ],
     "translation": "Удалить из избранного"
+  },
+  "5ywtDz": {
+    "translation": "",
+    "message": "Remove image",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        193
+      ]
+    ]
   },
   "99VIgC": {
     "message": "Remove member",
@@ -9346,7 +9973,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        62
+        63
       ]
     ],
     "translation": "Удалено из избранного"
@@ -9439,6 +10066,18 @@
     ],
     "translation": "переименован пункт чек-листа в <0>{0}</0>"
   },
+  "YOzD/a": {
+    "translation": "",
+    "message": "Replace image",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        201
+      ]
+    ]
+  },
   "Yx0Ud8": {
     "message": "Requested",
     "placeholders": {},
@@ -9504,7 +10143,6 @@
     "translation": "Ресурсы"
   },
   "yKu/3Y": {
-    "translation": "",
     "message": "Restore",
     "placeholders": {},
     "comments": [],
@@ -9513,10 +10151,10 @@
         "src/views/board/components/ArchivedCards.tsx",
         127
       ]
-    ]
+    ],
+    "translation": ""
   },
   "jHVALe": {
-    "translation": "",
     "message": "Restore {0}",
     "placeholders": {
       "0": [
@@ -9529,10 +10167,10 @@
         "src/views/board/components/ArchivedCards.tsx",
         121
       ]
-    ]
+    ],
+    "translation": ""
   },
   "NTE3cf": {
-    "translation": "",
     "message": "restored the card",
     "placeholders": {},
     "comments": [],
@@ -9541,10 +10179,10 @@
         "src/views/card/components/ActivityList.tsx",
         157
       ]
-    ]
+    ],
+    "translation": ""
   },
   "bAwW7i": {
-    "translation": "",
     "message": "restored the card to <0>{0}</0>",
     "placeholders": {
       "0": [
@@ -9557,7 +10195,8 @@
         "src/views/card/components/ActivityList.tsx",
         183
       ]
-    ]
+    ],
+    "translation": ""
   },
   "5k0NLb": {
     "message": "Review",
@@ -9671,6 +10310,10 @@
       [
         "src/views/settings/components/Avatar.tsx",
         292
+      ],
+      [
+        "src/views/worklog/index.tsx",
+        190
       ]
     ],
     "translation": "Сохранить"
@@ -10142,7 +10785,7 @@
       ],
       [
         "src/components/SideNavigation.tsx",
-        150
+        181
       ]
     ],
     "translation": "Настройки"
@@ -10523,6 +11166,18 @@
     ],
     "translation": ""
   },
+  "nwtY4N": {
+    "translation": "",
+    "message": "Something went wrong",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        91
+      ]
+    ]
+  },
   "J9+zIR": {
     "message": "Something went wrong during activation. Please try again.",
     "placeholders": {},
@@ -10578,15 +11233,15 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        246
+        277
       ],
       [
         "src/components/SideNavigation.tsx",
-        247
+        278
       ],
       [
         "src/components/SideNavigation.tsx",
-        257
+        288
       ]
     ],
     "translation": "Начать бесплатный пробный период"
@@ -10826,11 +11481,11 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        872
+        883
       ],
       [
         "src/views/board/index.tsx",
-        915
+        939
       ]
     ],
     "translation": "Шаблон"
@@ -10890,7 +11545,7 @@
     "origin": [
       [
         "src/components/SideNavigation.tsx",
-        126
+        157
       ],
       [
         "src/views/boards/index.tsx",
@@ -11015,6 +11670,30 @@
     ],
     "translation": "Указанный лицензионный ключ не найден. Обратитесь в службу поддержки."
   },
+  "JXUG+w": {
+    "translation": "",
+    "message": "The board background has been removed.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        41
+      ]
+    ]
+  },
+  "0ZAONd": {
+    "translation": "",
+    "message": "The board background has been updated.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        90
+      ]
+    ]
+  },
   "NcFrgC": {
     "message": "The board has been archived.",
     "placeholders": {},
@@ -11022,7 +11701,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        53
+        54
       ]
     ],
     "translation": "Доска была архивирована."
@@ -11050,7 +11729,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        54
+        55
       ]
     ],
     "translation": "Доска была восстановлена из архива."
@@ -11097,6 +11776,18 @@
       ]
     ],
     "translation": "Введённый вами текущий пароль неверен."
+  },
+  "jXhx8N": {
+    "translation": "",
+    "message": "The image must be smaller than 10MB.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        67
+      ]
+    ]
   },
   "lkz85l": {
     "message": "The main difference between Kan and Trello is that Kan is open source, allowing anyone to view, modify, and contribute to our code. Our cloud offering also offers no restrictions on features for individual use, whereas Trello locks basic features such as the number of boards you can create behind a paywall.",
@@ -11243,7 +11934,6 @@
     "translation": "Этот API-ключ будет показан только один раз. Пожалуйста, сохраните его в надёжном месте."
   },
   "pPIDqz": {
-    "translation": "",
     "message": "This board has no lists. Add a list, then restore the card.",
     "placeholders": {},
     "comments": [],
@@ -11252,7 +11942,8 @@
         "src/views/board/components/ArchivedCards.tsx",
         53
       ]
-    ]
+    ],
+    "translation": ""
   },
   "l4asa1": {
     "message": "This board is private or does not exist",
@@ -11434,6 +12125,18 @@
     ],
     "translation": "ID задачи скопирован в буфер обмена"
   },
+  "Rf+r8d": {
+    "translation": "",
+    "message": "Tip: press Cmd/Ctrl + Enter to save.",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        402
+      ]
+    ]
+  },
   "MHrjPM": {
     "message": "Title",
     "placeholders": {},
@@ -11482,6 +12185,10 @@
       [
         "src/views/board/components/CalendarView.tsx",
         314
+      ],
+      [
+        "src/views/worklog/index.tsx",
+        380
       ]
     ],
     "translation": "Сегодня"
@@ -11509,6 +12216,22 @@
       ]
     ],
     "translation": "Требуется токен"
+  },
+  "Bycfjm": {
+    "translation": "",
+    "message": "Total: {0}",
+    "placeholders": {
+      "0": [
+        "formatDuration(totalMinutes)"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        386
+      ]
+    ]
   },
   "eEQyz+": {
     "message": "Track all card changes with detailed activity history.",
@@ -11665,7 +12388,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        444
+        445
       ],
       [
         "src/views/card/components/Dropdown.tsx",
@@ -11781,7 +12504,7 @@
     "origin": [
       [
         "src/views/card/components/AttachmentThumbnails.tsx",
-        73
+        82
       ]
     ],
     "translation": "Не удалось удалить вложение"
@@ -11886,6 +12609,18 @@
     ],
     "translation": "Невозможно переместить карточку"
   },
+  "o9YO4G": {
+    "translation": "",
+    "message": "Unable to remove image",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        47
+      ]
+    ]
+  },
   "8yFGGF": {
     "message": "Unable to remove member",
     "placeholders": {},
@@ -11923,7 +12658,6 @@
     "translation": "Не удалось сбросить разрешения"
   },
   "8tfe4t": {
-    "translation": "",
     "message": "Unable to restore card",
     "placeholders": {},
     "comments": [],
@@ -11932,7 +12666,8 @@
         "src/views/board/components/ArchivedCards.tsx",
         50
       ]
-    ]
+    ],
+    "translation": ""
   },
   "A8jqN7": {
     "message": "Unable to send feedback",
@@ -11981,7 +12716,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        72
+        73
       ]
     ],
     "translation": "Не удалось обновить доску"
@@ -12017,7 +12752,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        346
+        347
       ],
       [
         "src/views/card/index.tsx",
@@ -12069,7 +12804,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        383
+        384
       ],
       [
         "src/views/card/components/DueDateSelector.tsx",
@@ -12097,7 +12832,7 @@
     "origin": [
       [
         "src/views/board/index.tsx",
-        290
+        291
       ],
       [
         "src/views/card/components/ListSelector.tsx",
@@ -12177,7 +12912,7 @@
     "origin": [
       [
         "src/views/board/components/BoardDropdown.tsx",
-        124
+        130
       ]
     ],
     "translation": "Восстановить доску из архива"
@@ -12370,6 +13105,18 @@
     ],
     "translation": "Неограниченное количество мест"
   },
+  "2wWjzQ": {
+    "translation": "",
+    "message": "Unsupported file",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        57
+      ]
+    ]
+  },
   "wja8aL": {
     "message": "Untitled",
     "placeholders": {},
@@ -12548,11 +13295,39 @@
     "comments": [],
     "origin": [
       [
-        "src/views/card/components/AttachmentUpload.tsx",
-        51
+        "src/hooks/useCardAttachmentUpload.ts",
+        83
+      ],
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        96
       ]
     ],
     "translation": "Ошибка загрузки"
+  },
+  "6MxxvO": {
+    "translation": "",
+    "message": "Upload image",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        201
+      ]
+    ]
+  },
+  "GxkJXS": {
+    "translation": "",
+    "message": "Uploading...",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/board/components/BoardBackgroundForm.tsx",
+        175
+      ]
+    ]
   },
   "BBUDfW": {
     "message": "Urgent",
@@ -12645,6 +13420,18 @@
       ]
     ],
     "translation": "URL должен содержать не менее 3 символов"
+  },
+  "vtnjRL": {
+    "translation": "",
+    "message": "Use e.g. 45m, 2h or 1:30",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        114
+      ]
+    ]
   },
   "QNtP5M": {
     "message": "Use template",
@@ -12982,6 +13769,18 @@
     ],
     "translation": "Вебхуки"
   },
+  "zx4BuL": {
+    "translation": "",
+    "message": "Week",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        324
+      ]
+    ]
+  },
   "xLTZVf": {
     "message": "Week start day",
     "placeholders": {},
@@ -13005,6 +13804,22 @@
       ]
     ],
     "translation": "С возвращением"
+  },
+  "TU2aMX": {
+    "translation": "",
+    "message": "What did you work on?",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        86
+      ],
+      [
+        "src/views/worklog/components/WorkLogEntryForm.tsx",
+        87
+      ]
+    ]
   },
   "xEbBrW": {
     "message": "What license are you using?",
@@ -13069,7 +13884,7 @@
       ],
       [
         "src/views/board/index.tsx",
-        872
+        883
       ],
       [
         "src/views/boards/index.tsx",
@@ -13374,6 +14189,18 @@
     ],
     "translation": "Да, мы предлагаем бессрочный бесплатный тариф для индивидуального использования. Без ограничений, без платных функций, без лимитов."
   },
+  "av/PD9": {
+    "translation": "",
+    "message": "you",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        437
+      ]
+    ]
+  },
   "RtlIYB": {
     "message": "You are about to change your password.",
     "placeholders": {},
@@ -13423,7 +14250,6 @@
     "translation": "Вы можете пригласить участников команды, нажав кнопку «Пригласить» в правом верхнем углу <0>страницы участников</0> и введя их адрес электронной почты. Они получат письмо со ссылкой для присоединения к рабочему пространству."
   },
   "YlMjbh": {
-    "translation": "",
     "message": "You can restore it later from Archived cards in the board menu.",
     "placeholders": {},
     "comments": [],
@@ -13432,7 +14258,8 @@
         "src/views/card/components/DeleteCardConfirmation.tsx",
         78
       ]
-    ]
+    ],
+    "translation": ""
   },
   "vAj6xG": {
     "message": "You can self-host by following the instructions in our <0>repo</0>.",
@@ -13473,11 +14300,11 @@
       ],
       [
         "src/views/board/index.tsx",
-        946
+        970
       ],
       [
         "src/views/board/index.tsx",
-        1020
+        1044
       ],
       [
         "src/views/boards/components/BoardsList.tsx",
@@ -13664,8 +14491,8 @@
     "comments": [],
     "origin": [
       [
-        "src/views/card/components/AttachmentUpload.tsx",
-        46
+        "src/hooks/useCardAttachmentUpload.ts",
+        96
       ]
     ],
     "translation": "Ваш файл был успешно загружен."

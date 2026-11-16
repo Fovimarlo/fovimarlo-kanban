@@ -108,8 +108,18 @@ export function BoardsList({ isTemplate, archived = false }: { isTemplate?: bool
           <Link
             href={`${isTemplate ? "templates" : "boards"}/${board.publicId}`}
           >
-            <div className="group relative mr-5 flex h-[150px] w-full items-center justify-center rounded-md border border-dashed border-light-400 bg-light-50 shadow-sm hover:bg-light-200 dark:border-dark-600 dark:bg-dark-50 dark:hover:bg-dark-100">
-              <PatternedBackground />
+            <div className="group relative mr-5 flex h-[150px] w-full items-center justify-center overflow-hidden rounded-md border border-dashed border-light-400 bg-light-50 shadow-sm hover:bg-light-200 dark:border-dark-600 dark:bg-dark-50 dark:hover:bg-dark-100">
+              {board.backgroundImageUrl ? (
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style={{
+                    backgroundImage: `url("${board.backgroundImageUrl}")`,
+                  }}
+                />
+              ) : (
+                <PatternedBackground />
+              )}
               <button
                 onClick={(e) => handleToggleFavorite(e, board.publicId, board.favorite)}
                 className={`absolute right-3 top-3 z-10 rounded p-1 transition-all hover:bg-light-300 dark:hover:bg-dark-200 ${board.favorite ? "" : "md:opacity-0 md:group-hover:opacity-100"
@@ -122,7 +132,13 @@ export function BoardsList({ isTemplate, archived = false }: { isTemplate?: bool
                   <HiOutlineStar className="h-5 w-5 text-neutral-700 dark:text-dark-800" />
                 )}
               </button>
-              <p className="px-4 text-[14px] font-bold text-neutral-700 dark:text-dark-1000">
+              <p
+                className={
+                  board.backgroundImageUrl
+                    ? "relative z-10 mx-4 rounded-md bg-light-50/90 px-3 py-1 text-[14px] font-bold text-neutral-700 shadow-sm dark:bg-dark-50/90 dark:text-dark-1000"
+                    : "px-4 text-[14px] font-bold text-neutral-700 dark:text-dark-1000"
+                }
+              >
                 {board.name}
               </p>
             </div>

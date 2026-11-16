@@ -60,6 +60,7 @@ export async function generateDownloadUrl(
   bucket: string,
   key: string,
   expiresIn = 3600,
+  signingDate?: Date,
 ) {
   const client = createS3Client();
   return getSignedUrl(
@@ -68,7 +69,7 @@ export async function generateDownloadUrl(
       Bucket: bucket,
       Key: key,
     }),
-    { expiresIn },
+    { expiresIn, signingDate },
   );
 }
 
@@ -134,6 +135,35 @@ export async function generateAttachmentUrl(
     return await generateDownloadUrl(bucket, attachmentKey, expiresIn);
   } catch {
     // If URL generation fails, return null
+    return null;
+  }
+}
+
+/**
+ * Generate presigned URL for a board background / brand image.
+ * The signing date is rounded down to the hour so the URL stays stable
+ * between refetches and the browser can keep the image cached.
+ * Returns null if key is missing, bucket is not configured, or URL generation fails
+ */
+export async function generateBoardBackgroundUrl(
+  imageKey: string | null | undefined,
+): Promise<string | null> {
+  if (!imageKey) {
+    return null;
+  }
+
+  const bucket = env("NEXT_PUBLIC_ATTACHMENTS_BUCKET_NAME");
+  if (!bucket) {
+    return null;
+  }
+
+  const signingDate = new Date();
+  signingDate.setMinutes(0, 0, 0);
+
+  try {
+    // Valid for 25h from the rounded signing date, so always >= 24h remaining
+    return await generateDownloadUrl(bucket, imageKey, 90000, signingDate);
+  } catch {
     return null;
   }
 }

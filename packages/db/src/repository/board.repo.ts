@@ -50,6 +50,7 @@ export const getAllByWorkspaceId = async (
     columns: {
       publicId: true,
       name: true,
+      backgroundImageKey: true,
     },
     with: {
       userFavorites: {
@@ -200,6 +201,7 @@ export const getByPublicId = async (
       slug: true,
       visibility: true,
       isArchived: true,
+      backgroundImageKey: true,
     },
     with: {
       userFavorites: {
@@ -664,6 +666,23 @@ export const update = async (
   return result;
 };
 
+export const updateBackgroundImageKey = async (
+  db: dbClient,
+  boardId: number,
+  backgroundImageKey: string | null,
+) => {
+  const [result] = await db
+    .update(boards)
+    .set({ backgroundImageKey, updatedAt: new Date() })
+    .where(eq(boards.id, boardId))
+    .returning({
+      publicId: boards.publicId,
+      backgroundImageKey: boards.backgroundImageKey,
+    });
+
+  return result;
+};
+
 export const softDelete = async (
   db: dbClient,
   args: {
@@ -723,6 +742,7 @@ export const getWorkspaceAndBoardIdByBoardPublicId = async (
       id: true,
       workspaceId: true,
       createdBy: true,
+      backgroundImageKey: true,
     },
     where: eq(boards.publicId, boardPublicId),
   });

@@ -6,6 +6,7 @@ import {
   HiLink,
   HiOutlineArchiveBox,
   HiOutlineDocumentDuplicate,
+  HiOutlinePhoto,
   HiOutlineStar,
   HiOutlineTrash,
   HiStar,
@@ -110,6 +111,11 @@ export default function BoardDropdown({
             label: t`Edit board URL`,
             action: () => openModal("UPDATE_BOARD_SLUG"),
             icon: <HiLink className="h-[16px] w-[16px] text-dark-900" />,
+          },
+          {
+            label: t`Brand image`,
+            action: () => openModal("BOARD_BACKGROUND"),
+            icon: <HiOutlinePhoto className="h-[16px] w-[16px] text-dark-900" />,
           },
         ]
       : []),

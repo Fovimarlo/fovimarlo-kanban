@@ -10,9 +10,12 @@ import * as workspaceRepo from "@kan/db/repository/workspace.repo";
 import { colours } from "@kan/shared/constants";
 import {
   convertDueDateFiltersToRanges,
+  deleteObject,
+  generateBoardBackgroundUrl,
   generateSlug,
   generateUID,
 } from "@kan/shared/utils";
+import { createLogger } from "@kan/logger";
 
 import { createTRPCRouter, protectedProcedure, publicProcedure } from "../trpc";
 import {
@@ -24,6 +27,8 @@ import {
 } from "../schemas";
 import { createAvatarUrlResolver } from "../utils/avatarUrls";
 import { assertCanDelete, assertCanEdit, assertPermission } from "../utils/permissions";
+
+const log = createLogger("board-router");
 
 export const boardRouter = createTRPCRouter({
   all: protectedProcedure
@@ -67,7 +72,7 @@ export const boardRouter = createTRPCRouter({
 
       await assertPermission(ctx.db, userId, workspace.id, "board:view");
 
-      const result = boardRepo.getAllByWorkspaceId(
+      const result = await boardRepo.getAllByWorkspaceId(
         ctx.db,
         workspace.id,
         userId,
@@ -77,7 +82,13 @@ export const boardRouter = createTRPCRouter({
         }
       );
 
-      return result;
+      return Promise.all(
+        result.map(async ({ backgroundImageKey, ...board }) => ({
+          ...board,
+          backgroundImageUrl:
+            await generateBoardBackgroundUrl(backgroundImageKey),
+        })),
+      );
     }),
   byId: protectedProcedure
     .meta({
@@ -206,8 +217,11 @@ export const boardRouter = createTRPCRouter({
         })),
       );
 
+      const { backgroundImageKey, ...boardResult } = result;
+
       return {
-        ...result,
+        ...boardResult,
+        backgroundImageUrl: await generateBoardBackgroundUrl(backgroundImageKey),
         lists: listsWithAvatarUrls,
         workspace: workspaceWithAvatarUrls,
       };
@@ -643,6 +657,57 @@ export const boardRouter = createTRPCRouter({
           }));
 
           await activityRepo.bulkCreate(ctx.db, activities);
+        }
+      }
+
+      return { success: true };
+    }),
+  removeBackgroundImage: protectedProcedure
+    .meta({
+      openapi: {
+        method: "DELETE",
+        path: "/boards/{boardPublicId}/background-image",
+        summary: "Remove board background image",
+        description:
+          "Removes the brand logo / background image of a board. Upload a new one via POST /api/upload/board-background.",
+        tags: ["Boards"],
+        protect: true,
+      },
+    })
+    .input(z.object({ boardPublicId: z.string().min(12) }))
+    .output(z.object({ success: z.boolean() }))
+    .mutation(async ({ ctx, input }) => {
+      const userId = ctx.user?.id;
+
+      if (!userId)
+        throw new TRPCError({
+          message: `User not authenticated`,
+          code: "UNAUTHORIZED",
+        });
+
+      const board = await boardRepo.getWorkspaceAndBoardIdByBoardPublicId(
+        ctx.db,
+        input.boardPublicId,
+      );
+
+      if (!board)
+        throw new TRPCError({
+          message: `Board with public ID ${input.boardPublicId} not found`,
+          code: "NOT_FOUND",
+        });
+
+      await assertPermission(ctx.db, userId, board.workspaceId, "board:edit");
+
+      const previousKey = board.backgroundImageKey;
+
+      await boardRepo.updateBackgroundImageKey(ctx.db, board.id, null);
+
+      const bucket = process.env.NEXT_PUBLIC_ATTACHMENTS_BUCKET_NAME;
+      if (previousKey && bucket) {
+        try {
+          await deleteObject(bucket, previousKey);
+        } catch (err) {
+          log.warn({ err }, "Failed to delete old board background image");
         }
       }
 

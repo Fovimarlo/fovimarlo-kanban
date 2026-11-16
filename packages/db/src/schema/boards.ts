@@ -57,6 +57,8 @@ export const boards = pgTable(
     type: boardTypeEnum("type").notNull().default("regular"),
     isArchived: boolean("isArchived").notNull().default(false),
     sourceBoardId: bigint("sourceBoardId", { mode: "number" }),
+    // S3 key (attachments bucket) of the brand logo / background image
+    backgroundImageKey: varchar("backgroundImageKey", { length: 512 }),
   },
   (table) => [
     index("board_is_archived_idx").on(table.isArchived),

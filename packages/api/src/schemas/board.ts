@@ -13,6 +13,7 @@ export const boardListItemSchema = z.object({
   publicId: z.string(),
   name: z.string(),
   favorite: z.boolean(),
+  backgroundImageUrl: z.string().nullable(),
   lists: z.array(
     z.object({
       publicId: z.string(),
@@ -59,6 +60,7 @@ export const boardDetailSchema = z.object({
   visibility: z.string(),
   isArchived: z.boolean(),
   favorite: z.boolean(),
+  backgroundImageUrl: z.string().nullable(),
   workspace: z.object({
     publicId: z.string(),
     cardPrefix: z.string(),
