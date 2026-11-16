@@ -131,7 +131,7 @@ export const workLogRouter = createTRPCRouter({
         method: "GET",
         path: "/workspaces/{workspacePublicId}/work-logs",
         description:
-          "Lists daily work log entries of workspace members within a date range (inclusive)",
+          "Lists daily work log entries within a date range (inclusive). Admins see all members; other members only see their own entries.",
         tags: ["Work logs"],
         protect: true,
       },
@@ -165,8 +165,18 @@ export const workLogRouter = createTRPCRouter({
           code: "BAD_REQUEST",
         });
 
-      let memberId: number | undefined;
-      if (input.memberPublicId) {
+      // Only admins can see other members' logs; everyone else sees their own.
+      const isAdmin = currentMember.role === "admin";
+      let memberId: number | undefined = isAdmin ? undefined : currentMember.id;
+      if (
+        input.memberPublicId &&
+        input.memberPublicId !== currentMember.publicId
+      ) {
+        if (!isAdmin)
+          throw new TRPCError({
+            message: `Only admins can view other members' work logs`,
+            code: "FORBIDDEN",
+          });
         const member = await workspaceRepo.getMemberByPublicId(
           ctx.db,
           input.memberPublicId,

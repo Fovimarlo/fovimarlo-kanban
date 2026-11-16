@@ -104,8 +104,42 @@ describe("workLog router", () => {
     ).rejects.toMatchObject({ code: "BAD_REQUEST" });
   });
 
-  it("marks only the caller's own entries as editable", async () => {
+  it("limits non-admin members to their own entries", async () => {
     mockMember(5);
+    vi.mocked(workLogRepo.getAllByWorkspaceAndDateRange).mockResolvedValue([
+      entry(5),
+    ]);
+
+    const result = await caller.list({
+      workspacePublicId,
+      dateFrom: "2026-11-16",
+      dateTo: "2026-11-16",
+    });
+
+    expect(workLogRepo.getAllByWorkspaceAndDateRange).toHaveBeenCalledWith(
+      expect.anything(),
+      expect.objectContaining({ workspaceId: 1, memberId: 5 }),
+    );
+    expect(result[0]?.canEdit).toBe(true);
+    expect(result[0]).not.toHaveProperty("memberId");
+  });
+
+  it("forbids non-admin members from viewing another member's log", async () => {
+    mockMember(5);
+
+    await expect(
+      caller.list({
+        workspacePublicId,
+        dateFrom: "2026-11-16",
+        dateTo: "2026-11-16",
+        memberPublicId: "member-60000",
+      }),
+    ).rejects.toMatchObject({ code: "FORBIDDEN" });
+    expect(workLogRepo.getAllByWorkspaceAndDateRange).not.toHaveBeenCalled();
+  });
+
+  it("lets admins see every member's entries", async () => {
+    mockMember(5, "admin");
     vi.mocked(workLogRepo.getAllByWorkspaceAndDateRange).mockResolvedValue([
       entry(5),
       entry(6),
@@ -117,8 +151,11 @@ describe("workLog router", () => {
       dateTo: "2026-11-16",
     });
 
-    expect(result.map((item) => item.canEdit)).toEqual([true, false]);
-    expect(result[0]).not.toHaveProperty("memberId");
+    expect(workLogRepo.getAllByWorkspaceAndDateRange).toHaveBeenCalledWith(
+      expect.anything(),
+      expect.objectContaining({ memberId: undefined }),
+    );
+    expect(result).toHaveLength(2);
   });
 
   it("lets admins edit every entry", async () => {

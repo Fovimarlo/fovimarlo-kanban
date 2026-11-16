@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { t } from "@lingui/core/macro";
+import { plural, t } from "@lingui/core/macro";
 import { addDays, format, isToday, startOfWeek } from "date-fns";
 import { useMemo, useState } from "react";
 import {
@@ -43,6 +43,8 @@ const selectClassName =
 
 export default function WorkLogView() {
   const { workspace } = useWorkspace();
+  // Admins see everyone's logs; other members only see their own (enforced by the API too)
+  const isAdmin = workspace.role === "admin";
   const { dateLocale } = useLocalisation();
   const { showPopup } = usePopup();
   const { data: session } = authClient.useSession();
@@ -151,10 +153,10 @@ export default function WorkLogView() {
   }, [entries, currentMemberPublicId]);
 
   const membersWithoutEntries = useMemo(() => {
-    if (memberFilter || !entries) return [];
+    if (!isAdmin || memberFilter || !entries) return [];
     const logged = new Set(entries.map((entry) => entry.member.publicId));
     return activeMembers.filter((member) => !logged.has(member.publicId));
-  }, [activeMembers, entries, memberFilter]);
+  }, [activeMembers, entries, memberFilter, isAdmin]);
 
   const totalMinutes = groups.reduce((sum, g) => sum + g.totalMinutes, 0);
 
@@ -325,22 +327,24 @@ export default function WorkLogView() {
                 </button>
               ))}
             </div>
-            <select
-              value={memberFilter}
-              onChange={(e) => setMemberFilter(e.target.value)}
-              aria-label={t`Filter by person`}
-              className={selectClassName}
-            >
-              <option value="">{t`Everyone`}</option>
-              {activeMembers.map((member) => (
-                <option key={member.publicId} value={member.publicId}>
-                  {formatMemberDisplayName(
-                    member.user?.name ?? null,
-                    member.user?.email ?? member.email ?? null,
-                  )}
-                </option>
-              ))}
-            </select>
+            {isAdmin && (
+              <select
+                value={memberFilter}
+                onChange={(e) => setMemberFilter(e.target.value)}
+                aria-label={t`Filter by person`}
+                className={selectClassName}
+              >
+                <option value="">{t`Everyone`}</option>
+                {activeMembers.map((member) => (
+                  <option key={member.publicId} value={member.publicId}>
+                    {formatMemberDisplayName(
+                      member.user?.name ?? null,
+                      member.user?.email ?? member.email ?? null,
+                    )}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
         </div>
 
@@ -437,7 +441,10 @@ export default function WorkLogView() {
                       ` (${t`you`})`}
                   </span>
                   <span className="text-xs text-light-900 dark:text-dark-900">
-                    {t`${group.entries.length} entries`}
+                    {plural(group.entries.length, {
+                      one: "# entry",
+                      other: "# entries",
+                    })}
                     {group.totalMinutes > 0 &&
                       ` · ${formatDuration(group.totalMinutes)}`}
                   </span>

@@ -23,6 +23,22 @@
     ],
     "translation": ", oppure consulta il nostro"
   },
+  "7oibsn": {
+    "translation": "",
+    "message": "{0, plural, one {# entry} other {# entries}}",
+    "placeholders": {
+      "0": [
+        "group.entries.length"
+      ]
+    },
+    "comments": [],
+    "origin": [
+      [
+        "src/views/worklog/index.tsx",
+        444
+      ]
+    ]
+  },
   "XOue+X": {
     "message": "{0} (deleted list)",
     "placeholders": {
@@ -65,7 +81,6 @@
     "translation": "{0} | {1}"
   },
   "UtDeek": {
-    "translation": "",
     "message": "{0} cards",
     "placeholders": {
       "0": [
@@ -78,7 +93,8 @@
         "src/views/assigned/index.tsx",
         46
       ]
-    ]
+    ],
+    "translation": ""
   },
   "baIPh3": {
     "message": "{0} cards due",
@@ -110,7 +126,8 @@
         "src/views/worklog/index.tsx",
         440
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "mU+M00": {
     "message": "{0} has been added to your favorites.",
@@ -225,7 +242,6 @@
     "translation": ""
   },
   "nXbO/0": {
-    "translation": "",
     "message": "{succeeded} file(s) uploaded, {failed} failed. Please try again.",
     "placeholders": {
       "succeeded": [
@@ -241,10 +257,10 @@
         "src/hooks/useCardAttachmentUpload.ts",
         86
       ]
-    ]
+    ],
+    "translation": ""
   },
   "FYPTJW": {
-    "translation": "",
     "message": "{succeeded} files have been uploaded successfully.",
     "placeholders": {
       "succeeded": [
@@ -257,7 +273,8 @@
         "src/hooks/useCardAttachmentUpload.ts",
         95
       ]
-    ]
+    ],
+    "translation": ""
   },
   "h/eDNV": {
     "message": "+ {overflowCount} more",
@@ -588,7 +605,6 @@
     "translation": "Aggiungi un elemento..."
   },
   "V8euYO": {
-    "translation": "",
     "message": "Add attachment",
     "placeholders": {},
     "comments": [],
@@ -597,7 +613,8 @@
         "src/views/card/components/AttachmentUpload.tsx",
         62
       ]
-    ]
+    ],
+    "translation": ""
   },
   "sFY+gw": {
     "message": "Add card",
@@ -692,16 +709,16 @@
     "translation": "Aggiungi dettagli..."
   },
   "Rd7v4h": {
-    "translation": "",
     "message": "Add entry",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        398
+        402
       ]
-    ]
+    ],
+    "translation": ""
   },
   "lyqwgn": {
     "message": "Add label",
@@ -760,7 +777,6 @@
     "translation": ""
   },
   "OkeQcU": {
-    "translation": "",
     "message": "Add the brand's logo or a background image. It is shown behind the board and on the boards overview.",
     "placeholders": {},
     "comments": [],
@@ -769,7 +785,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         130
       ]
-    ]
+    ],
+    "translation": ""
   },
   "pBsoKL": {
     "message": "Add to favorites",
@@ -784,7 +801,6 @@
     "translation": "Aggiungi ai preferiti"
   },
   "QTHrgW": {
-    "translation": "",
     "message": "Add to my log for {0}",
     "placeholders": {
       "0": [
@@ -795,9 +811,10 @@
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        393
+        397
       ]
-    ]
+    ],
+    "translation": ""
   },
   "cWXW+7": {
     "message": "Add webhook",
@@ -1577,7 +1594,6 @@
     "translation": "ha assegnato <0>{0}</0> alla card"
   },
   "iU3XRS": {
-    "translation": "",
     "message": "Assigned to me",
     "placeholders": {},
     "comments": [],
@@ -1590,10 +1606,10 @@
         "src/views/assigned/index.tsx",
         42
       ]
-    ]
+    ],
+    "translation": ""
   },
   "6F7z9C": {
-    "translation": "",
     "message": "Assigned to me | {0}",
     "placeholders": {
       "0": [
@@ -1606,7 +1622,8 @@
         "src/views/assigned/index.tsx",
         38
       ]
-    ]
+    ],
+    "translation": ""
   },
   "JUce1S": {
     "message": "Assignees",
@@ -2097,7 +2114,6 @@
     "translation": "Brainstorming"
   },
   "3r1LXi": {
-    "translation": "",
     "message": "Brand / board",
     "placeholders": {},
     "comments": [],
@@ -2106,10 +2122,10 @@
         "src/views/worklog/components/WorkLogEntryForm.tsx",
         94
       ]
-    ]
+    ],
+    "translation": ""
   },
   "chaMzm": {
-    "translation": "",
     "message": "Brand image",
     "placeholders": {},
     "comments": [],
@@ -2122,10 +2138,10 @@
         "src/views/board/components/BoardDropdown.tsx",
         116
       ]
-    ]
+    ],
+    "translation": ""
   },
   "UGqsjv": {
-    "translation": "",
     "message": "Brand image removed",
     "placeholders": {},
     "comments": [],
@@ -2134,10 +2150,10 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         40
       ]
-    ]
+    ],
+    "translation": ""
   },
   "2KDyQ6": {
-    "translation": "",
     "message": "Brand image updated",
     "placeholders": {},
     "comments": [],
@@ -2146,7 +2162,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         89
       ]
-    ]
+    ],
+    "translation": ""
   },
   "vXemf6": {
     "message": "Bug",
@@ -2723,11 +2740,11 @@
       ],
       [
         "src/views/worklog/components/WorkLogEntryForm.tsx",
-        120
+        125
       ],
       [
         "src/views/worklog/index.tsx",
-        245
+        247
       ]
     ],
     "translation": "Annulla"
@@ -3113,7 +3130,6 @@
     "translation": "Clicca sul link che abbiamo inviato a {magicLinkRecipient} per accedere."
   },
   "pgsVLC": {
-    "translation": "",
     "message": "Click or drop an image here",
     "placeholders": {},
     "comments": [],
@@ -3122,10 +3138,10 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         178
       ]
-    ]
+    ],
+    "translation": ""
   },
   "An1Y6L": {
-    "translation": "",
     "message": "Click or drop to replace",
     "placeholders": {},
     "comments": [],
@@ -3134,7 +3150,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         177
       ]
-    ]
+    ],
+    "translation": ""
   },
   "yz7wBu": {
     "message": "Close",
@@ -4101,7 +4118,6 @@
     "translation": "Assistenza clienti"
   },
   "qLCIjd": {
-    "translation": "",
     "message": "Daily log",
     "placeholders": {},
     "comments": [],
@@ -4112,12 +4128,12 @@
       ],
       [
         "src/views/worklog/index.tsx",
-        308
+        310
       ]
-    ]
+    ],
+    "translation": ""
   },
   "WmSHOR": {
-    "translation": "",
     "message": "Daily log | {0}",
     "placeholders": {
       "0": [
@@ -4128,9 +4144,10 @@
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        304
+        306
       ]
-    ]
+    ],
+    "translation": ""
   },
   "pvnfJD": {
     "message": "Dark",
@@ -4145,16 +4162,16 @@
     "translation": "Scuro"
   },
   "H7OUPr": {
-    "translation": "",
     "message": "Day",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        324
+        326
       ]
-    ]
+    ],
+    "translation": ""
   },
   "cp1rsD": {
     "message": "Deactivate invite link",
@@ -4239,7 +4256,7 @@
       ],
       [
         "src/views/worklog/index.tsx",
-        238
+        240
       ]
     ],
     "translation": "Elimina"
@@ -4345,16 +4362,16 @@
     "translation": "Elimina commento"
   },
   "Qd9nQC": {
-    "translation": "",
     "message": "Delete entry",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        262
+        264
       ]
-    ]
+    ],
+    "translation": ""
   },
   "lYT7pQ": {
     "message": "Delete list",
@@ -4753,7 +4770,6 @@
     "translation": "Download non riuscito"
   },
   "4f6gZ1": {
-    "translation": "",
     "message": "Drop files to attach them to this card",
     "placeholders": {},
     "comments": [],
@@ -4762,7 +4778,8 @@
         "src/views/card/components/CardFileDropZone.tsx",
         108
       ]
-    ]
+    ],
+    "translation": ""
   },
   "XicmhT": {
     "message": "Due date",
@@ -4877,7 +4894,6 @@
     "translation": "Duplicazione in corso…"
   },
   "lkz6PL": {
-    "translation": "",
     "message": "Duration",
     "placeholders": {},
     "comments": [],
@@ -4886,10 +4902,10 @@
         "src/views/worklog/components/WorkLogEntryForm.tsx",
         109
       ]
-    ]
+    ],
+    "translation": ""
   },
   "o5UXGa": {
-    "translation": "",
     "message": "Duration (e.g. 1h 30m)",
     "placeholders": {},
     "comments": [],
@@ -4898,7 +4914,8 @@
         "src/views/worklog/components/WorkLogEntryForm.tsx",
         108
       ]
-    ]
+    ],
+    "translation": ""
   },
   "ePK91l": {
     "message": "Edit",
@@ -4945,16 +4962,16 @@
     "translation": "Modifica commento"
   },
   "BiSSQP": {
-    "translation": "",
     "message": "Edit entry",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        254
+        256
       ]
-    ]
+    ],
+    "translation": ""
   },
   "dgr4Kq": {
     "message": "Edit label",
@@ -5489,16 +5506,16 @@
     "translation": "Eventi"
   },
   "PsQmAw": {
-    "translation": "",
     "message": "Everyone",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        334
+        337
       ]
-    ]
+    ],
+    "translation": ""
   },
   "8iP0S8": {
     "message": "Everything in the free plan, plus:",
@@ -5697,7 +5714,6 @@
     "translation": "Impossibile caricare l'allegato. Riprova."
   },
   "3nY+5l": {
-    "translation": "",
     "message": "Failed to upload the image. Please try again.",
     "placeholders": {},
     "comments": [],
@@ -5706,7 +5722,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         97
       ]
-    ]
+    ],
+    "translation": ""
   },
   "/lDBHm": {
     "message": "FAQ",
@@ -5821,7 +5838,6 @@
     "translation": "Feedback inviato"
   },
   "NMzjiG": {
-    "translation": "",
     "message": "File too large",
     "placeholders": {},
     "comments": [],
@@ -5834,7 +5850,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         66
       ]
-    ]
+    ],
+    "translation": ""
   },
   "F6m23G": {
     "message": "File uploads",
@@ -5849,7 +5866,6 @@
     "translation": "Caricamento file"
   },
   "FpVAJ1": {
-    "translation": "",
     "message": "Files must be smaller than 50MB: {0}",
     "placeholders": {
       "0": [
@@ -5862,7 +5878,8 @@
         "src/hooks/useCardAttachmentUpload.ts",
         38
       ]
-    ]
+    ],
+    "translation": ""
   },
   "o7J4JM": {
     "message": "Filter",
@@ -5877,16 +5894,16 @@
     "translation": "Filtra"
   },
   "NKRuA7": {
-    "translation": "",
     "message": "Filter by person",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        331
+        334
       ]
-    ]
+    ],
+    "translation": ""
   },
   "l31EoQ": {
     "message": "Find answers to common questions about Kan. Can't find what you're looking for? Feel free to <0>contact us</0>.",
@@ -6265,7 +6282,6 @@
     "translation": "Vai alle bacheche"
   },
   "/Ea6kg": {
-    "translation": "",
     "message": "Go to cards assigned to me",
     "placeholders": {},
     "comments": [],
@@ -6274,10 +6290,10 @@
         "src/components/SideNavigation.tsx",
         129
       ]
-    ]
+    ],
+    "translation": ""
   },
   "IiDacE": {
-    "translation": "",
     "message": "Go to daily log",
     "placeholders": {},
     "comments": [],
@@ -6286,7 +6302,8 @@
         "src/components/SideNavigation.tsx",
         141
       ]
-    ]
+    ],
+    "translation": ""
   },
   "XEoGkQ": {
     "message": "Go to homepage",
@@ -6645,7 +6662,6 @@
     "translation": "Idee per migliorare questa pagina..."
   },
   "nJWJkq": {
-    "translation": "",
     "message": "Images and other files up to 50MB",
     "placeholders": {},
     "comments": [],
@@ -6654,7 +6670,8 @@
         "src/views/card/components/CardFileDropZone.tsx",
         111
       ]
-    ]
+    ],
+    "translation": ""
   },
   "l3s5ri": {
     "message": "Import",
@@ -7041,7 +7058,6 @@
     "translation": "Unisciti al workspace | kan.bn"
   },
   "WzcT4b": {
-    "translation": "",
     "message": "JPG, PNG, WEBP or GIF, up to 10MB.",
     "placeholders": {},
     "comments": [],
@@ -7050,7 +7066,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         182
       ]
-    ]
+    ],
+    "translation": ""
   },
   "wM8xd8": {
     "message": "Junior",
@@ -8196,16 +8213,16 @@
     "translation": "Newsletter"
   },
   "5tQWiI": {
-    "translation": "",
     "message": "Next day",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        363
+        367
       ]
-    ]
+    ],
+    "translation": ""
   },
   "g8JmSC": {
     "message": "Next month",
@@ -8232,16 +8249,16 @@
     "translation": "Prossimi passi"
   },
   "IT903p": {
-    "translation": "",
     "message": "Next week",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        363
+        367
       ]
-    ]
+    ],
+    "translation": ""
   },
   "/glL9Q": {
     "message": "No {0}",
@@ -8308,7 +8325,6 @@
     "translation": "Nessuna board trovata"
   },
   "qb22V3": {
-    "translation": "",
     "message": "No brand / board",
     "placeholders": {},
     "comments": [],
@@ -8317,10 +8333,10 @@
         "src/views/worklog/components/WorkLogEntryForm.tsx",
         97
       ]
-    ]
+    ],
+    "translation": ""
   },
   "D8Ms3B": {
-    "translation": "",
     "message": "No cards are assigned to you yet.",
     "placeholders": {},
     "comments": [],
@@ -8329,7 +8345,8 @@
         "src/views/assigned/index.tsx",
         62
       ]
-    ]
+    ],
+    "translation": ""
   },
   "WAQMrN": {
     "message": "No cards due",
@@ -8392,16 +8409,16 @@
     "translation": "Nessun URL di download disponibile per questo allegato."
   },
   "3otDDh": {
-    "translation": "",
     "message": "No entries yet",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        454
+        461
       ]
-    ]
+    ],
+    "translation": ""
   },
   "TXO5TM": {
     "message": "No keyboard shortcuts registered.",
@@ -8516,28 +8533,28 @@
     "translation": "Nessun webhook configurato. Aggiungi un webhook per ricevere notifiche."
   },
   "UjTmsb": {
-    "translation": "",
     "message": "Nothing has been logged for this day yet.",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        418
+        422
       ]
-    ]
+    ],
+    "translation": ""
   },
   "6xkIpk": {
-    "translation": "",
     "message": "Nothing has been logged for this week yet.",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        419
+        423
       ]
-    ]
+    ],
+    "translation": ""
   },
   "9h7RDh": {
     "message": "Offer",
@@ -8672,7 +8689,6 @@
     "translation": "o"
   },
   "znm30Y": {
-    "translation": "",
     "message": "or drop files anywhere / paste an image",
     "placeholders": {},
     "comments": [],
@@ -8681,7 +8697,8 @@
         "src/views/card/components/AttachmentUpload.tsx",
         65
       ]
-    ]
+    ],
+    "translation": ""
   },
   "Uci+Ph": {
     "message": "Ordered List",
@@ -9072,16 +9089,16 @@
     "translation": "Progetto personale"
   },
   "B8mlc2": {
-    "translation": "",
     "message": "Pick a date",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        371
+        375
       ]
-    ]
+    ],
+    "translation": ""
   },
   "Oi+J+N": {
     "message": "Pick a plan to get started. All paid plans include a 14-day free trial.",
@@ -9148,7 +9165,6 @@
     "translation": "Piattaforma"
   },
   "ExHabH": {
-    "translation": "",
     "message": "Please choose a JPG, PNG, WEBP or GIF image.",
     "placeholders": {},
     "comments": [],
@@ -9157,7 +9173,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         58
       ]
-    ]
+    ],
+    "translation": ""
   },
   "58AiWX": {
     "message": "Please confirm your new password",
@@ -9466,7 +9483,7 @@
       ],
       [
         "src/views/worklog/index.tsx",
-        92
+        94
       ]
     ],
     "translation": "Riprova più tardi o contatta l'assistenza clienti."
@@ -9540,16 +9557,16 @@
     "translation": "Posizione nell'elenco (0 = primo, lascia vuoto per la fine)"
   },
   "lVfMQu": {
-    "translation": "",
     "message": "Previous day",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        352
+        356
       ]
-    ]
+    ],
+    "translation": ""
   },
   "1xwZj/": {
     "message": "Previous month",
@@ -9564,16 +9581,16 @@
     "translation": "Mese precedente"
   },
   "mmShHA": {
-    "translation": "",
     "message": "Previous week",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        352
+        356
       ]
-    ]
+    ],
+    "translation": ""
   },
   "aHCEmh": {
     "message": "Pricing",
@@ -9872,7 +9889,6 @@
     "translation": "Rimuovi dai preferiti"
   },
   "5ywtDz": {
-    "translation": "",
     "message": "Remove image",
     "placeholders": {},
     "comments": [],
@@ -9881,7 +9897,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         193
       ]
-    ]
+    ],
+    "translation": ""
   },
   "99VIgC": {
     "message": "Remove member",
@@ -10067,7 +10084,6 @@
     "translation": "ha rinominato l'elemento della checklist in <0>{0}</0>"
   },
   "YOzD/a": {
-    "translation": "",
     "message": "Replace image",
     "placeholders": {},
     "comments": [],
@@ -10076,7 +10092,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         201
       ]
-    ]
+    ],
+    "translation": ""
   },
   "Yx0Ud8": {
     "message": "Requested",
@@ -10313,7 +10330,7 @@
       ],
       [
         "src/views/worklog/index.tsx",
-        190
+        192
       ]
     ],
     "translation": "Salva"
@@ -11167,16 +11184,16 @@
     "translation": ""
   },
   "nwtY4N": {
-    "translation": "",
     "message": "Something went wrong",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        91
+        93
       ]
-    ]
+    ],
+    "translation": ""
   },
   "J9+zIR": {
     "message": "Something went wrong during activation. Please try again.",
@@ -11671,7 +11688,6 @@
     "translation": "Impossibile trovare quella chiave di licenza. Contatta l'assistenza."
   },
   "JXUG+w": {
-    "translation": "",
     "message": "The board background has been removed.",
     "placeholders": {},
     "comments": [],
@@ -11680,10 +11696,10 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         41
       ]
-    ]
+    ],
+    "translation": ""
   },
   "0ZAONd": {
-    "translation": "",
     "message": "The board background has been updated.",
     "placeholders": {},
     "comments": [],
@@ -11692,7 +11708,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         90
       ]
-    ]
+    ],
+    "translation": ""
   },
   "NcFrgC": {
     "message": "The board has been archived.",
@@ -11778,7 +11795,6 @@
     "translation": "La password attuale inserita non è corretta."
   },
   "jXhx8N": {
-    "translation": "",
     "message": "The image must be smaller than 10MB.",
     "placeholders": {},
     "comments": [],
@@ -11787,7 +11803,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         67
       ]
-    ]
+    ],
+    "translation": ""
   },
   "lkz85l": {
     "message": "The main difference between Kan and Trello is that Kan is open source, allowing anyone to view, modify, and contribute to our code. Our cloud offering also offers no restrictions on features for individual use, whereas Trello locks basic features such as the number of boards you can create behind a paywall.",
@@ -12126,16 +12143,16 @@
     "translation": "ID ticket copiato negli appunti"
   },
   "Rf+r8d": {
-    "translation": "",
     "message": "Tip: press Cmd/Ctrl + Enter to save.",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        402
+        406
       ]
-    ]
+    ],
+    "translation": ""
   },
   "MHrjPM": {
     "message": "Title",
@@ -12188,7 +12205,7 @@
       ],
       [
         "src/views/worklog/index.tsx",
-        380
+        384
       ]
     ],
     "translation": "Oggi"
@@ -12218,7 +12235,6 @@
     "translation": "Il token è obbligatorio"
   },
   "Bycfjm": {
-    "translation": "",
     "message": "Total: {0}",
     "placeholders": {
       "0": [
@@ -12229,9 +12245,10 @@
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        386
+        390
       ]
-    ]
+    ],
+    "translation": ""
   },
   "eEQyz+": {
     "message": "Track all card changes with detailed activity history.",
@@ -12610,7 +12627,6 @@
     "translation": "Impossibile spostare la scheda"
   },
   "o9YO4G": {
-    "translation": "",
     "message": "Unable to remove image",
     "placeholders": {},
     "comments": [],
@@ -12619,7 +12635,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         47
       ]
-    ]
+    ],
+    "translation": ""
   },
   "8yFGGF": {
     "message": "Unable to remove member",
@@ -13106,7 +13123,6 @@
     "translation": "Posti illimitati"
   },
   "2wWjzQ": {
-    "translation": "",
     "message": "Unsupported file",
     "placeholders": {},
     "comments": [],
@@ -13115,7 +13131,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         57
       ]
-    ]
+    ],
+    "translation": ""
   },
   "wja8aL": {
     "message": "Untitled",
@@ -13306,7 +13323,6 @@
     "translation": "Caricamento non riuscito"
   },
   "6MxxvO": {
-    "translation": "",
     "message": "Upload image",
     "placeholders": {},
     "comments": [],
@@ -13315,10 +13331,10 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         201
       ]
-    ]
+    ],
+    "translation": ""
   },
   "GxkJXS": {
-    "translation": "",
     "message": "Uploading...",
     "placeholders": {},
     "comments": [],
@@ -13327,7 +13343,8 @@
         "src/views/board/components/BoardBackgroundForm.tsx",
         175
       ]
-    ]
+    ],
+    "translation": ""
   },
   "BBUDfW": {
     "message": "Urgent",
@@ -13422,7 +13439,6 @@
     "translation": "L'URL deve contenere almeno 3 caratteri"
   },
   "vtnjRL": {
-    "translation": "",
     "message": "Use e.g. 45m, 2h or 1:30",
     "placeholders": {},
     "comments": [],
@@ -13431,7 +13447,8 @@
         "src/views/worklog/components/WorkLogEntryForm.tsx",
         114
       ]
-    ]
+    ],
+    "translation": ""
   },
   "QNtP5M": {
     "message": "Use template",
@@ -13770,16 +13787,16 @@
     "translation": "Webhook"
   },
   "zx4BuL": {
-    "translation": "",
     "message": "Week",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        324
+        326
       ]
-    ]
+    ],
+    "translation": ""
   },
   "xLTZVf": {
     "message": "Week start day",
@@ -13806,7 +13823,6 @@
     "translation": "Bentornato"
   },
   "TU2aMX": {
-    "translation": "",
     "message": "What did you work on?",
     "placeholders": {},
     "comments": [],
@@ -13819,7 +13835,8 @@
         "src/views/worklog/components/WorkLogEntryForm.tsx",
         87
       ]
-    ]
+    ],
+    "translation": ""
   },
   "xEbBrW": {
     "message": "What license are you using?",
@@ -14190,16 +14207,16 @@
     "translation": "Sì, offriamo un piano gratuito per sempre per uso individuale. Nessuna restrizione, nessun paywall, nessun limite."
   },
   "av/PD9": {
-    "translation": "",
     "message": "you",
     "placeholders": {},
     "comments": [],
     "origin": [
       [
         "src/views/worklog/index.tsx",
-        437
+        441
       ]
-    ]
+    ],
+    "translation": ""
   },
   "RtlIYB": {
     "message": "You are about to change your password.",
